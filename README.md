@@ -4,3 +4,5 @@ Robot seguidor de linea, evasor de obstaculos y control BT
 ![alt tag](https://github.com/TalosElectronics1/Robot-3N1/blob/master/Diagramas/Conexion_Puente_H_bb.png)
 ![alt tag](https://github.com/TalosElectronics1/Robot-3N1/blob/master/Diagramas/BT_Robot_3N1_bb.png)
 ![alt tag](https://github.com/TalosElectronics1/Robot-3N1/blob/master/Diagramas/Ultrasonico_Robot_3N1_bb.png)
+![alt tag](https://github.com/TalosElectronics1/Robot-3N1/blob/master/Diagramas/Conexion%20sensores%20seguidor%20de%20linea_bb.png)
+
