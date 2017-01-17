@@ -91,8 +91,8 @@ void Robot::Modo_Bluetooth()
       if (Estado == '4')
       {
         //Girar a la izquierda
-        Motor_1.Adelante(Velocidad_Max);
-        Motor_2.Atras(Velocidad_Max);
+        Motor_2.Adelante(Velocidad_Max);
+        Motor_1.Atras(Velocidad_Max);
       }
       if (Estado == '5')
       {
@@ -101,8 +101,8 @@ void Robot::Modo_Bluetooth()
       if (Estado == '6')
       {
         //Girar a la derecha
-        Motor_1.Atras(Velocidad_Max);
-        Motor_2.Adelante(Velocidad_Max);
+        Motor_2.Atras(Velocidad_Max);
+        Motor_1.Adelante(Velocidad_Max);
       }
       if (Estado == '7')
       {
