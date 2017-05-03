@@ -17,13 +17,13 @@ void Motor::Inicializar_Motor()
   pinMode(B, OUTPUT);
   pinMode(Pwm, OUTPUT);
 }
-void Motor::Adelante(int Velocidad)
+void Motor::Atras(int Velocidad)
 {
   analogWrite(Pwm,Velocidad );
   digitalWrite(A, HIGH);
   digitalWrite(B, LOW);
 }
-void Motor::Atras(int Velocidad)
+void Motor::Adelante(int Velocidad)
 {
   analogWrite(Pwm,Velocidad );
   digitalWrite(A, LOW);
@@ -48,6 +48,7 @@ void Robot::Inicializar_Robot()
 {
   Motor_1.Inicializar_Motor();
   Motor_2.Inicializar_Motor();
+  sonar.Inicializar_ultrasonico();
   Bluetooth.begin(9600);//Iniciar la comunicacion a 9600
 }
 
@@ -128,8 +129,7 @@ void Robot::Modo_Bluetooth()
 void Robot::Modo_Evasor(int Dis_giro)
 {
   int Distancia;
-   Distancia = sonar.ping();
-   Distancia = Distancia / US_ROUNDTRIP_CM;
+   Distancia = sonar.Obtener_Distancia();
    if (Distancia <= Dis_giro)
       {
         //Girar a la derecha

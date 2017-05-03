@@ -1,6 +1,6 @@
 #include <Arduino.h> //Permite utilizar los comandos de Arduino
 #include <SoftwareSerial.h>//Libreria para nuevo puerto serial para el bluetooth
-#include <NewPing.h>//Libreria para sensor ultrasonico HC-SR04
+#include "Sensor_ultrasonico_HCSR04.h"
 
 class Sensor
 {
@@ -34,12 +34,12 @@ class Robot
   Motor Motor_1;
   Motor Motor_2;
   SoftwareSerial Bluetooth; // RX, TX
-  NewPing sonar;
+  Sensor_ultrasonico_HCSR04 sonar;
   
   public:
   Sensor Sensor_1;
   Sensor Sensor_2;
-  Robot(int Pin_Motor_1A,int Pin_Motor_1B,int PWM_1, int Pin_Motor_1C, int Pin_Motor_1D,int PWM_2,int PinS1,int PinS2, int TX, int RX,int Trig, int Echo): Motor_1(Pin_Motor_1A,Pin_Motor_1B,PWM_1), Motor_2(Pin_Motor_1C,Pin_Motor_1D,PWM_2),Sensor_1(PinS1),Sensor_2(PinS2),Bluetooth(TX,RX),sonar(Trig,Echo,300){}
+  Robot(int Pin_Motor_1A,int Pin_Motor_1B,int PWM_1, int Pin_Motor_1C, int Pin_Motor_1D,int PWM_2,int PinS1,int PinS2, int TX, int RX,int Trig, int Echo): Motor_1(Pin_Motor_1A,Pin_Motor_1B,PWM_1), Motor_2(Pin_Motor_1C,Pin_Motor_1D,PWM_2),Sensor_1(PinS1),Sensor_2(PinS2),Bluetooth(TX,RX),sonar(Echo,Trig){}
   void Inicializar_Robot();
   void Adelante(int Velocidad_1,int Velocidad_2);
   void Atras(int Velocidad_1,int Velocidad_2);
