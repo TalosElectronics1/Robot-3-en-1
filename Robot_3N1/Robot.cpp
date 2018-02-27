@@ -72,12 +72,12 @@ void Robot::Modo_Bluetooth()
 {
   int Estado;
   int Velocidad_Max=255;
-  int Velocidad_Med=200;
+  int Velocidad_Med=180;
   Estado=Leer_BT();
   if (Estado == '1')
       {
         //Arriba_Izquierda
-        Adelante(Velocidad_Max,Velocidad_Med);
+        Adelante(Velocidad_Med,Velocidad_Max);
       }
       if (Estado == '2')
       {
@@ -87,7 +87,7 @@ void Robot::Modo_Bluetooth()
       if (Estado == '3')
       {
         //Arriba_Derecha
-        Adelante(Velocidad_Med,Velocidad_Max);
+        Adelante(Velocidad_Max,Velocidad_Med);
       }
       if (Estado == '4')
       {
@@ -108,7 +108,7 @@ void Robot::Modo_Bluetooth()
       if (Estado == '7')
       {
         //Abajo Izquierda
-        Atras(Velocidad_Max,Velocidad_Med); 
+        Atras(Velocidad_Med,Velocidad_Max); 
       }
       if (Estado == '8')
       {
@@ -118,7 +118,7 @@ void Robot::Modo_Bluetooth()
       if (Estado == '9')
       {
         //Abajo Derecha
-        Atras(Velocidad_Med,Velocidad_Max);
+        Atras(Velocidad_Max,Velocidad_Med);
       }
       if (Estado == 'w')
       {

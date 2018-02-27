@@ -33,7 +33,7 @@
  *    //////////////////////////////////////////
  */
 #include "Robot.h"
- Robot Robot(13,12,11,10,9,8,4,5,2,3,6,7);
+ Robot Robot(13,12,11,10,8,9,4,5,2,3,6,7);
 
 int Menu;
 void setup() 
@@ -67,7 +67,6 @@ void loop()
 
     case 2:
     Robot.Modo_Evasor(25);//25cm=Distancia del obstaculo
-    
     break;
 
     case 3:
