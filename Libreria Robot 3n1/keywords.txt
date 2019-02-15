@@ -1,6 +1,0 @@
-Robot	KEYWORD1	
-Inicializar_Robot	KEYWORD2 
-Leer_BT	KEYWORD2 
-Modo_Bluetooth	KEYWORD2 
-Modo_Evasor	KEYWORD2 
-Modo_Seguidor	KEYWORD2 
