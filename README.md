@@ -10,7 +10,7 @@ La aplicacion esta disponible en la [**playstore.**](https://play.google.com/sto
 ![portada](https://raw.githubusercontent.com/TalosElectronics1/Robot-3-en-1/master/Diagramas/3n1.jpg)
 
 # Preguntas frecuentes
-Visita nuestra secion de [preguntas frecuentes](https://www.taloselectronics.com/blogs/tutoriales/faq-kit-3-en-1)
+Visita nuestra sección de [preguntas frecuentes](https://www.taloselectronics.com/blogs/tutoriales/faq-kit-3-en-1)
 - ¿Como descargo el código?
 - Mi código no funciona, no compila
 - El seguidor de linea no funciona
