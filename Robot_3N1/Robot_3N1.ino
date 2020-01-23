@@ -1,7 +1,10 @@
 /*
  * Talos Electronics
  * Tgo. Rafael Lozano Rolon 
- * Modificado por ultima vez 12 Diciembre 2016
+ * soporte@taloselectronics.com
+ *
+ * No compila el codigo? te invitamos a ver las preguntas frecuentes
+ * https://www.taloselectronics.com/blogs/tutoriales/faq-kit-3-en-1
  * Para inicializar el Robot se necesita definir los pines de la siguiente manera
  * Robot Nombre_Robot(In1,In2,Vss1-2,IN3,IN4,Vss3-4,S1,S2,TX_Bluetooth,RX_Bluettoth,Trig_Ultrasonico,Echo_Ultrasonico) 
  *                   (-------------------------------------Parametros:-----------------------------------------------)
